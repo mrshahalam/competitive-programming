@@ -1,0 +1,29 @@
+package test;
+import java.lang.StringBuffer;
+ 
+/*
+     Total number of character in the  given string 
+*/
+
+public  class demo {
+	
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		
+		String str = "SHAHalamhi hu me  aaa";
+		
+		str= str.replace("a", "z");
+		
+		System.out.print(str);
+
+		
+		
+		
+		
+}
+}
+
+
+
+
