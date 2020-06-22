@@ -1,0 +1,33 @@
+package test;
+import java.lang.StringBuffer;
+ 
+/*
+     palindrome string r those string which a same from both side   from forward and backward 
+*/
+
+public  class demo {
+	
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		 String str ="shahhahsa";
+		 boolean  flag = true;
+		 for(int i=0;i<str.length()/2;i++)
+		 {
+			 if(str.charAt(i)!=str.charAt(str.length()-1-i))
+			 {
+				 flag= false;
+			 }
+			 
+		 }
+		if(flag)
+			System.out.print("palindrome string ");
+		else
+			System.out.print(" not palindrome string ");
+
+}
+}
+
+
+
+
