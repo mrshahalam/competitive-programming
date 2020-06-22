@@ -1,0 +1,36 @@
+package test;
+import java.util.Arrays;
+import java.util.Scanner;  
+/*
+     Total number of character in the  given string 
+*/
+public  class demo {
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		
+		String  str ="abcdefghijklmnopqrstuvwxyz";
+		int size = str.length();
+		int temp=0;
+		
+		String arr[] = new String[size*(size+1)/2];
+		
+		for(int i=0; i<size;i++)
+		{
+			for(int j=i; j<size;j++)
+			{
+				arr[temp] = str.substring(i, j+1);
+				temp++;
+			}
+		}
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}
+}
+}
+
+
+
+
