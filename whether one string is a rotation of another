@@ -1,0 +1,32 @@
+package test;
+import java.lang.StringBuffer;
+ 
+/*
+     palindrome string r those string which a same from both side   from forward and backward 
+*/
+
+public  class demo {
+	
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		 String str = "abcdef";
+		 String str1 = "cdefab";
+		 
+		 if(str.length()!=str1.length())
+			 System.out.print("the length of the string is not same ");
+		 else
+		 {
+			 str= str.concat(str);
+			 if(str.indexOf(str1)!=-1)
+				 System.out.print("string is  rotational");
+			 else
+				 System.out.print("string is   rotational");
+		 }
+		  
+}
+}
+
+
+
+
