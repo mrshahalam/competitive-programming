@@ -1,0 +1,35 @@
+package test;
+import java.io.File;
+import java.util.*;
+/*
+     find the dublicate character in  the string 
+*/
+public  class demo {
+	
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		String str = "abcdeabcaa";
+		int count;
+		char string[] = str.toCharArray();
+		System.out.print("Repeated Element are : ");
+		for(int i=0;i<str.length();i++)
+		{
+			count=1;
+			for(int j= i+1;j<str.length();j++)
+			{
+				if(str.charAt(i)==str.charAt(j)){
+					count++;
+					 
+				}
+			}
+			if(count>1)
+			{
+				System.out.print(string[i]+",");
+			}
+		}
+		
+}
+}
+
+
