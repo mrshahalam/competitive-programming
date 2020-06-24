@@ -1,0 +1,27 @@
+package test;
+
+import java.util.*;
+/*
+     find the dublicate character in  the string 
+*/
+public  class demo {
+	
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+		int line=5;
+		  for(int i=1;i<=line;i++)
+		  {
+			  for(int j=line;j>=1;j--)
+			  {
+				  if(j==i)
+					  System.out.print("*");
+				  else
+					  System.out.print(j);
+			  }
+			  System.out.println();
+		  }
+}
+}
+
+
