@@ -1,0 +1,28 @@
+package test;
+import java.io.File;
+import java.util.*;
+/*
+     find the dublicate character in  the string 
+*/
+public  class demo {
+	
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+	  String str1 = "Good";
+	 String str2 = "Morning";
+	 
+	 str1= str1.concat(str2);
+	 
+	 str2 =str1.substring(0,( str1.length()-str2.length()));  //Good
+	 
+	 str1=str1.substring(str2.length()); 	//morning
+	 
+	 System.out.print("String after swapping is  : "+str1+" "+str2);
+	  
+	  
+	  
+}
+}
+
+
