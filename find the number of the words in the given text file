@@ -1,0 +1,27 @@
+package test;
+import java.io.File;
+import java.util.*;
+/*
+     find the dublicate character in  the string 
+*/
+public  class demo {
+	
+	
+	public static void main(String[] args)   throws Exception
+	{ 
+	  String str = "hi bro what are you doing right now hi i am writing the code in the laptop";
+	  int count=0;
+	  for(int i=0;i<str.length();i++)
+	  {
+		  if(str.charAt(i)==' ')
+		  {
+			  count++;
+		  }
+			  
+	  }
+	  System.out.print("total words in the given string is : "+(count+1));
+	  
+}
+}
+
+
