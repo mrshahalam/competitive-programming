@@ -1,0 +1,25 @@
+package com.codewithshah;
+public class fifth {
+
+    int fun(int[] arr)
+    {
+        for(int i=0;i< arr.length;i++)
+        {
+            if(arr[i]!=i)
+                return i;
+        }
+        return -1;
+    }
+    public static void main(String[] args)
+     {
+         fifth ob  = new fifth();
+         int arr[] = {0,1,2,3,4,6,7,8,9};
+          int get  = ob.fun(arr);
+          if(get==-1)
+              System.out.print("not find");
+          else
+              System.out.print("missing number is : "+get);
+
+
+     }
+}
